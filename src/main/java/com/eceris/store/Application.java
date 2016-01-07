@@ -6,17 +6,15 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
 
 @SpringBootApplication
+//@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class Application extends SpringBootServletInitializer {
 
-    private static Class<Application> appClass = Application.class;
-
     public static void main(String[] args) {
-        SpringApplication.run(appClass, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        builder.sources(appClass);
-        return super.configure(builder);
+        return builder.sources(Application.class);
     }
 }
