@@ -6,14 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../resources/image/DO_favicon.ico">
-
-    <title>Daou Tech</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../resources/libs/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="../../resources/libs/bootstrap/css/signin.css" rel="stylesheet">
-    <link href="../../resources/libs/bootstrap/css/custom.css" rel="stylesheet">
+    <link href="../../resources/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../resources/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -21,26 +17,27 @@
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="margin-top:0px;">
-  	<div class="header">
-  		<a href="/" class="logo" title="다우기술">다우기술</a>
-  	</div>
-  	<div class="navBiz">
-	  	<div class="btnBox">
-			<span class="heading"></span>
-		</div>
-	</div>
-    <div class="content">
-      <form class="form-signin" action="/login" method="POST">
-        <h3 class="page_title">로그인</h3>        
-      	<p class="page_desc">고객과 함께 비상하는 다우기술</p>
-        <input type="text" class="form-control" placeholder="Id" autofocus name="loginId">
-        <input type="password" class="form-control" placeholder="Password" name="password">        
-        <button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
-      </form>
-    </div> <!-- /container -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+  <body>
+  	<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">Sign in to continue to Bootsnipp</h1>
+            <div class="account-wall">
+                <form class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Sign in</button>
+                <label class="checkbox pull-left">
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
+                <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                </form>
+            </div>
+            <a href="#" class="text-center new-account">Create an account </a>
+        </div>
+    </div>
+</div>
   </body>
 </html>
