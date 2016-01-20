@@ -6,7 +6,7 @@ define(['library/pqgrid/pqgrid.dev'], function () {
 	function _controller($scope) {
 
 		//CSS 설정
-		$scope.$emit('updateCSS', ['lib/jquery/css/base/jquery-ui-1.10.2.min.css', 'lib/pqgrid/pqgrid.dev.css']);
+		$scope.$emit('updateCSS', ['resources/lib/jquery/css/base/jquery-ui-1.10.2.min.css', 'resources/lib/pqgrid/pqgrid.dev.css']);
 		
 		
 		/*

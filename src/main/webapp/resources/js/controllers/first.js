@@ -6,7 +6,7 @@ define([], function () {
 	function _controller($scope) {
 	
 		//CSS 설정
-		$scope.$emit('updateCSS', ['css/css1.css']);
+		$scope.$emit('updateCSS', ['resources/css/css1.css']);
 		
 		$scope.message = "I'm the 1st controller!";
 		$scope.greeting = "Hello world!";		
