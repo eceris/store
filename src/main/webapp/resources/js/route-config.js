@@ -98,7 +98,7 @@ define([
 
 							if( angular.isDefined(lazyResources) ) {
 
-								//다이렉티브
+								//디렉티브
 								if( angular.isDefined(lazyResources.directives) ) {
 									for(var i=0; i<lazyResources.directives.length; i++) {
 										lazyDirectives.register(arguments[indicator]);
