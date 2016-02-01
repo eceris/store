@@ -24,6 +24,12 @@ define([
 				filters: []
 			}));
 
+			$routeProvider.when('/carousel', routeConfig.config('../partials/carousel.html', 'controllers/carousel', {
+				directives: [], 
+				services: [], 
+				filters: []
+			}));
+			
 			//grid 경로 설정
 			$routeProvider.when('/grid', routeConfig.config('../partials/grid.html', 'controllers/grid'));
 

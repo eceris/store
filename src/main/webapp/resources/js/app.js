@@ -3,7 +3,9 @@
 //requireJS 모듈 선언 - [myApp 앵귤러 모듈]
 define([
 		'angular', //앵귤러 모듈을 사용하기 위해 임포트
-		'route-config' //registers에 각 프로바이더를 제공하기 위해 임포트
+		'route-config', //registers에 각 프로바이더를 제공하기 위해 임포트
+		'library/angular/angular-routes',
+		'library/angular/angular-animate'
 	],
 
 /*
@@ -21,7 +23,7 @@ define([
 		//여기서는 myApp이라는 앵귤러 모듈을 리턴한다.
 
 		//모듈 선언
-		var app = angular.module('myApp', [], function ($provide, $compileProvider, $controllerProvider, $filterProvider) {
+		var app = angular.module('myApp', ['ngRoute', 'ngAnimate'], function ($provide, $compileProvider, $controllerProvider, $filterProvider) {
 
 			//부트스트랩 과정에서만 가져올 수 있는 프로바이더들을 각 registers와 연계될 수 있도록
 			routeConfig.setProvide($provide); //for services
@@ -29,7 +31,6 @@ define([
 			routeConfig.setControllerProvider($controllerProvider); //for controllers
 			routeConfig.setFilterProvider($filterProvider); //for filters
 		});
-
 		//공통 컨트롤러 설정 - 모든 컨트롤러에서 공통적으로 사용하는 부분들 선언
 		app.controller('CommonController', function($scope) {
 

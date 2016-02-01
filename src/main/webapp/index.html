@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-controller="CommonController">
+<html lang="en"  ng-controller="CommonController">
 <head>
 	<meta charset="utf-8">
 	<title>My AngularJS App</title>
@@ -23,13 +23,14 @@
 		<a href="#/view1" class="btn">view1</a>
 		<a href="#/view2" class="btn">view2</a>
 		<a href="#/grid" class="btn">grid</a>
+		<a href="#/carousel" class="btn">carousel</a>
 		<a href="#/admin" class="btn" ng-show="isAdmin">admin</a>
 	</div>
 
 	<hr>
 
 	<div ng-view class="well well-small"></div>
-
+	
 	<button ng-hide="isAdmin" ng-click="isAdmin=true;">Become admin</button>
 
 	<!--

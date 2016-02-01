@@ -71,7 +71,7 @@ requirejs( [
 		'angular', //미리 선언해둔 path
 		'jquery-ui',
 		'app', //app.js
-		'routes' //routes.js
+		'routes'
 	],
 
 	//디펜던시 로드뒤 콜백함수
@@ -87,7 +87,6 @@ requirejs( [
 			//임의로 앵귤러 부트스트래핑을 수행한다.
 			
 			angular.bootstrap(document, ['myApp']);
-			
 		});
 		
 	}

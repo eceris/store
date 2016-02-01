@@ -8,7 +8,7 @@ define([], function () {
 		//CSS 설정
 		$scope.$emit('updateCSS', ['resources/css/css2.css']);
 
-	
+		debugger;
 		//컨트롤러2 메시지
 		$scope.message = "I'm the 2nd controller! "  + tester;
 		
